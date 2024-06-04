@@ -128,7 +128,7 @@ void Floyd(MaTranKe mt) {
 			{
 				if (khoangCach[i][j] > khoangCach[i][k] + khoangCach[k][j]) {
 					khoangCach[i][j] = khoangCach[i][k] + khoangCach[k][j];
-					dinhTrungGian[i][j] = i;
+					dinhTrungGian[i][j] = dinhTrungGian[k][j];
 				}
 			}
 		}
